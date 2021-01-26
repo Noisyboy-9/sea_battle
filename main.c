@@ -2,10 +2,10 @@
 #include "menu/menu.h"
 
 int main() {
-    int mainMenuOrder = getUserMenuOrder(&showMainMenu, NULL);
+    int mainMenuOrder = getUserMenuOrder(&showMainMenu, 0);
     while (mainMenuOrder != MAIN_MENU_EXIT) {
         mainMenuOrderController(mainMenuOrder);
-        mainMenuOrder = getUserMenuOrder(&showMainMenu, NULL);
+        mainMenuOrder = getUserMenuOrder(&showMainMenu, 0);
     }
 
     printf("hope you have enjoyed :)\n");

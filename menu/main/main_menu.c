@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "../../modes/modes.h"
+#include "singleplayer.h"
 
 #define MAIN_MENU_PLAY_WITH_FRIEND 1
 #define MAIN_MENU_PLAY_WITH_BOT 2
@@ -9,8 +10,6 @@
 #define MAIN_MENU_SCORE_BOARD 6
 #define MAIN_MENU_EXIT 7
 
-
-void playWithBotMode();
 
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
@@ -36,9 +35,5 @@ int mainMenuOrderController(int order) {
     }
 
     return order;
-}
-
-void playWithBotMode() {
-
 }
 
