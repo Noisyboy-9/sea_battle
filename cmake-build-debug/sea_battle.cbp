@@ -79,6 +79,12 @@
 		<Unit filename="/home/noisyboy/university/sea_battle/main.c">
 			<Option target="sea_battle"/>
 		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/Menu.c">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/Menu.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="/home/noisyboy/university/sea_battle/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

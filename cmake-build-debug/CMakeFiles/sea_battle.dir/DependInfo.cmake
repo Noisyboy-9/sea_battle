@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/noisyboy/university/sea_battle/main.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/main.c.o"
+  "/home/noisyboy/university/sea_battle/menu/Menu.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/menu/Menu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

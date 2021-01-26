@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/main.c.s
 .PHONY : main.c.s
 
+menu/Menu.o: menu/Menu.c.o
+
+.PHONY : menu/Menu.o
+
+# target to build an object file
+menu/Menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.o
+.PHONY : menu/Menu.c.o
+
+menu/Menu.i: menu/Menu.c.i
+
+.PHONY : menu/Menu.i
+
+# target to preprocess a source file
+menu/Menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.i
+.PHONY : menu/Menu.c.i
+
+menu/Menu.s: menu/Menu.c.s
+
+.PHONY : menu/Menu.s
+
+# target to generate assembly for a file
+menu/Menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.s
+.PHONY : menu/Menu.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +208,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu/Menu.o"
+	@echo "... menu/Menu.i"
+	@echo "... menu/Menu.s"
 .PHONY : help
 
 
