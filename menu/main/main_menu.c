@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "menu.h"
+#include "../../modes/modes.h"
 
 #define MAIN_MENU_PLAY_WITH_FRIEND 1
 #define MAIN_MENU_PLAY_WITH_BOT 2
@@ -21,6 +21,14 @@ void showMainMenu() {
 }
 
 
-void handleMainMenuOrder(int order) {
+int mainMenuOrderController(int order) {
+    switch (order) {
+        case 1:
+            playWithFriendMode();
+            break;
+        default:
+            order = MAIN_MENU_EXIT;
+    }
 
+    return order;
 }
