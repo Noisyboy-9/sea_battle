@@ -14,4 +14,4 @@ add_executable(
 
         modes/modes.h
         modes/multiplayer/multiplayer.c
-        modes/multiplayer/multiplayer.h menu/user/user.c menu/user/user.h)
+        modes/multiplayer/multiplayer.h menu/user/user.c menu/user/user.h modes/singleplayer/singleplayer.c modes/singleplayer/singleplayer.h)

@@ -10,6 +10,8 @@
 #define MAIN_MENU_EXIT 7
 
 
+void playWithBotMode();
+
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
     printf("%d.\tPlay with bot\n", MAIN_MENU_PLAY_WITH_BOT);
@@ -23,13 +25,20 @@ void showMainMenu() {
 
 int mainMenuOrderController(int order) {
     switch (order) {
-        case 1:
+        case MAIN_MENU_PLAY_WITH_FRIEND:
             playWithFriendMode();
+            break;
+        case MAIN_MENU_PLAY_WITH_BOT:
+            playWithBotMode();
             break;
         default:
             order = MAIN_MENU_EXIT;
     }
 
     return order;
+}
+
+void playWithBotMode() {
+
 }
 
