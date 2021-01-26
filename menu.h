@@ -1,8 +1,7 @@
 #ifndef SEA_BATTLE_MENU_H
 #define SEA_BATTLE_MENU_H
 
-int getUserMenuOrder(void (*menuShowCallback)());
-
-void showMainMenu();
+#include "menu/main/main_menu.h"
+#include "menu/helpers/menu_helpers.h"
 
 #endif //SEA_BATTLE_MENU_H

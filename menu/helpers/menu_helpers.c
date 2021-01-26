@@ -1,4 +1,5 @@
-#include "MenuHelpers.h"
+#include <stdio.h>
+#include "menu.h"
 
 int getUserMenuOrder(void (*menuShowCallback)()) {
     int order;

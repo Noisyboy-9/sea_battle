@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "MainMenu.h"
+#include "menu.h"
 
 #define MAIN_MENU_PLAY_WITH_FRIEND 1
 #define MAIN_MENU_PLAY_WITH_BOT 2
@@ -9,6 +9,7 @@
 #define MAIN_MENU_SCORE_BOARD 6
 #define MAIN_MENU_EXIT 7
 
+
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
     printf("%d.\tPlay with bot\n", MAIN_MENU_PLAY_WITH_BOT);
@@ -17,4 +18,9 @@ void showMainMenu() {
     printf("%d.\tSettings\n", MAIN_MENU_SETTINGS);
     printf("%d.\tScore board\n", MAIN_MENU_SCORE_BOARD);
     printf("%d.\tExit\n", MAIN_MENU_EXIT);
+}
+
+
+void handleMainMenuOrder(int order) {
+
 }

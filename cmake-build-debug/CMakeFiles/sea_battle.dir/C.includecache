@@ -13,28 +13,28 @@ menu.h
 /home/noisyboy/university/sea_battle/menu.h
 
 /home/noisyboy/university/sea_battle/menu.h
+menu/main/main_menu.h
+/home/noisyboy/university/sea_battle/menu/main/main_menu.h
 
 /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c
-MenuHelpers.h
-/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
-
-/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
-
-/home/noisyboy/university/sea_battle/menu/main/MainMenu.c
 stdio.h
 -
-MainMenu.h
-/home/noisyboy/university/sea_battle/menu/main/MainMenu.h
+menu.h
+/home/noisyboy/university/sea_battle/menu/helpers/menu.h
 
-/home/noisyboy/university/sea_battle/menu/main/MainMenu.h
+/home/noisyboy/university/sea_battle/menu/main/main_menu.c
+stdio.h
+-
+menu.h
+/home/noisyboy/university/sea_battle/menu/main/menu.h
+
+/home/noisyboy/university/sea_battle/menu/main/main_menu.h
 
 /home/noisyboy/university/sea_battle/menu/menu.c
 stdio.h
 -
 ../menu.h
 /home/noisyboy/university/sea_battle/menu.h
-helpers/MenuHelpers.h
-/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
-main/MainMenu.h
-/home/noisyboy/university/sea_battle/menu/main/MainMenu.h
+main/main_menu.h
+/home/noisyboy/university/sea_battle/menu/main/main_menu.h
 

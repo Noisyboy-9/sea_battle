@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/sea_battle.dir/main.c.o CMakeFiles/sea_battle.dir/menu/menu.c.o CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o -o sea_battle 
+/usr/bin/cc -g CMakeFiles/sea_battle.dir/main.c.o CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o -o sea_battle 

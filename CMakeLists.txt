@@ -3,4 +3,4 @@ project(sea_battle C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(sea_battle main.c menu.h menu/menu.c menu/helpers/MenuHelpers.c menu/helpers/MenuHelpers.h menu/main/MainMenu.c menu/main/MainMenu.h)
+add_executable(sea_battle main.c menu.h menu/helpers/menu_helpers.c menu/helpers/menu_helpers.h menu/main/main_menu.c menu/main/main_menu.h)

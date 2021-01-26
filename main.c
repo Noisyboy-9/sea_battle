@@ -3,5 +3,6 @@
 
 int main() {
     int mainMenuOrder = getUserMenuOrder(&showMainMenu);
+    handleMainMenuOrder(mainMenuOrder);
 }
 

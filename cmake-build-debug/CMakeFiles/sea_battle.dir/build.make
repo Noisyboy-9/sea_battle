@@ -89,62 +89,47 @@ CMakeFiles/sea_battle.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/main.c -o CMakeFiles/sea_battle.dir/main.c.s
 
-CMakeFiles/sea_battle.dir/menu/menu.c.o: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/menu/menu.c.o: ../menu/menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sea_battle.dir/menu/menu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sea_battle.dir/menu/menu.c.o -c /home/noisyboy/university/sea_battle/menu/menu.c
+CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o: ../menu/helpers/menu_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o -c /home/noisyboy/university/sea_battle/menu/helpers/menu_helpers.c
 
-CMakeFiles/sea_battle.dir/menu/menu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sea_battle.dir/menu/menu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/noisyboy/university/sea_battle/menu/menu.c > CMakeFiles/sea_battle.dir/menu/menu.c.i
+CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/noisyboy/university/sea_battle/menu/helpers/menu_helpers.c > CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.i
 
-CMakeFiles/sea_battle.dir/menu/menu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/menu/menu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/menu/menu.c -o CMakeFiles/sea_battle.dir/menu/menu.c.s
+CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/menu/helpers/menu_helpers.c -o CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.s
 
-CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o: ../menu/helpers/MenuHelpers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o -c /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c
+CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o: ../menu/main/main_menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o -c /home/noisyboy/university/sea_battle/menu/main/main_menu.c
 
-CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c > CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.i
+CMakeFiles/sea_battle.dir/menu/main/main_menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sea_battle.dir/menu/main/main_menu.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/noisyboy/university/sea_battle/menu/main/main_menu.c > CMakeFiles/sea_battle.dir/menu/main/main_menu.c.i
 
-CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c -o CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.s
-
-CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o: ../menu/main/MainMenu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o -c /home/noisyboy/university/sea_battle/menu/main/MainMenu.c
-
-CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/noisyboy/university/sea_battle/menu/main/MainMenu.c > CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.i
-
-CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/menu/main/MainMenu.c -o CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.s
+CMakeFiles/sea_battle.dir/menu/main/main_menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sea_battle.dir/menu/main/main_menu.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/noisyboy/university/sea_battle/menu/main/main_menu.c -o CMakeFiles/sea_battle.dir/menu/main/main_menu.c.s
 
 # Object files for target sea_battle
 sea_battle_OBJECTS = \
 "CMakeFiles/sea_battle.dir/main.c.o" \
-"CMakeFiles/sea_battle.dir/menu/menu.c.o" \
-"CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o" \
-"CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o"
+"CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o" \
+"CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o"
 
 # External object files for target sea_battle
 sea_battle_EXTERNAL_OBJECTS =
 
 sea_battle: CMakeFiles/sea_battle.dir/main.c.o
-sea_battle: CMakeFiles/sea_battle.dir/menu/menu.c.o
-sea_battle: CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o
-sea_battle: CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o
+sea_battle: CMakeFiles/sea_battle.dir/menu/helpers/menu_helpers.c.o
+sea_battle: CMakeFiles/sea_battle.dir/menu/main/main_menu.c.o
 sea_battle: CMakeFiles/sea_battle.dir/build.make
 sea_battle: CMakeFiles/sea_battle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable sea_battle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable sea_battle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sea_battle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
