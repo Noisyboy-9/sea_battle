@@ -1,7 +1,3 @@
-//
-// Created by sinas on 1/26/2021.
-//
-
 #include "MenuHelpers.h"
 
 int getUserMenuOrder(void (*menuShowCallback)()) {

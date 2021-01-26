@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/main.c.o"
   "CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o"
+  "CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o"
   "CMakeFiles/sea_battle.dir/menu/menu.c.o"
   "sea_battle"
   "sea_battle.pdb"

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/noisyboy/university/sea_battle/main.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/main.c.o"
   "/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o"
+  "/home/noisyboy/university/sea_battle/menu/main/MainMenu.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o"
   "/home/noisyboy/university/sea_battle/menu/menu.c" "/home/noisyboy/university/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/menu/menu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

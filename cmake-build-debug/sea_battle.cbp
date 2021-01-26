@@ -88,6 +88,12 @@
 		<Unit filename="/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h">
 			<Option target="sea_battle"/>
 		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/main/MainMenu.c">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/main/MainMenu.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="/home/noisyboy/university/sea_battle/menu/menu.c">
 			<Option target="sea_battle"/>
 		</Unit>

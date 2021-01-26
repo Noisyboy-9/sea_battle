@@ -7,6 +7,11 @@ CMakeFiles/sea_battle.dir/main.c.o: ../menu.h
 CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o: ../menu/helpers/MenuHelpers.c
 CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o: ../menu/helpers/MenuHelpers.h
 
+CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o: ../menu/main/MainMenu.c
+CMakeFiles/sea_battle.dir/menu/main/MainMenu.c.o: ../menu/main/MainMenu.h
+
 CMakeFiles/sea_battle.dir/menu/menu.c.o: ../menu.h
+CMakeFiles/sea_battle.dir/menu/menu.c.o: ../menu/helpers/MenuHelpers.h
+CMakeFiles/sea_battle.dir/menu/menu.c.o: ../menu/main/MainMenu.h
 CMakeFiles/sea_battle.dir/menu/menu.c.o: ../menu/menu.c
 
