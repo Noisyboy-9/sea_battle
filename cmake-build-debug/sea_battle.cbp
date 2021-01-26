@@ -79,10 +79,16 @@
 		<Unit filename="/home/noisyboy/university/sea_battle/main.c">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/home/noisyboy/university/sea_battle/menu/Menu.c">
+		<Unit filename="/home/noisyboy/university/sea_battle/menu.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/home/noisyboy/university/sea_battle/menu/Menu.h">
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/home/noisyboy/university/sea_battle/menu/menu.c">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/home/noisyboy/university/sea_battle/CMakeLists.txt">

@@ -3,3 +3,10 @@
 
 CMakeFiles/sea_battle.dir/main.c.o
  /home/noisyboy/university/sea_battle/main.c
+ /home/noisyboy/university/sea_battle/menu.h
+CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o
+ /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c
+ /home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
+CMakeFiles/sea_battle.dir/menu/menu.c.o
+ /home/noisyboy/university/sea_battle/menu.h
+ /home/noisyboy/university/sea_battle/menu/menu.c

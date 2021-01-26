@@ -169,32 +169,59 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/main.c.s
 .PHONY : main.c.s
 
-menu/Menu.o: menu/Menu.c.o
+menu/helpers/MenuHelpers.o: menu/helpers/MenuHelpers.c.o
 
-.PHONY : menu/Menu.o
+.PHONY : menu/helpers/MenuHelpers.o
 
 # target to build an object file
-menu/Menu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.o
-.PHONY : menu/Menu.c.o
+menu/helpers/MenuHelpers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.o
+.PHONY : menu/helpers/MenuHelpers.c.o
 
-menu/Menu.i: menu/Menu.c.i
+menu/helpers/MenuHelpers.i: menu/helpers/MenuHelpers.c.i
 
-.PHONY : menu/Menu.i
+.PHONY : menu/helpers/MenuHelpers.i
 
 # target to preprocess a source file
-menu/Menu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.i
-.PHONY : menu/Menu.c.i
+menu/helpers/MenuHelpers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.i
+.PHONY : menu/helpers/MenuHelpers.c.i
 
-menu/Menu.s: menu/Menu.c.s
+menu/helpers/MenuHelpers.s: menu/helpers/MenuHelpers.c.s
 
-.PHONY : menu/Menu.s
+.PHONY : menu/helpers/MenuHelpers.s
 
 # target to generate assembly for a file
-menu/Menu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/Menu.c.s
-.PHONY : menu/Menu.c.s
+menu/helpers/MenuHelpers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/helpers/MenuHelpers.c.s
+.PHONY : menu/helpers/MenuHelpers.c.s
+
+menu/menu.o: menu/menu.c.o
+
+.PHONY : menu/menu.o
+
+# target to build an object file
+menu/menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/menu.c.o
+.PHONY : menu/menu.c.o
+
+menu/menu.i: menu/menu.c.i
+
+.PHONY : menu/menu.i
+
+# target to preprocess a source file
+menu/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/menu.c.i
+.PHONY : menu/menu.c.i
+
+menu/menu.s: menu/menu.c.s
+
+.PHONY : menu/menu.s
+
+# target to generate assembly for a file
+menu/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/menu/menu.c.s
+.PHONY : menu/menu.c.s
 
 # Help Target
 help:
@@ -208,9 +235,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... menu/Menu.o"
-	@echo "... menu/Menu.i"
-	@echo "... menu/Menu.s"
+	@echo "... menu/helpers/MenuHelpers.o"
+	@echo "... menu/helpers/MenuHelpers.i"
+	@echo "... menu/helpers/MenuHelpers.s"
+	@echo "... menu/menu.o"
+	@echo "... menu/menu.i"
+	@echo "... menu/menu.s"
 .PHONY : help
 
 

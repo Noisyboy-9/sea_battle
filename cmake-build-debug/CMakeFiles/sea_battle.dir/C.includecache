@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/noisyboy/university/sea_battle/main.c
-stdio.h
--
+/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c
+MenuHelpers.h
+/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
+
+/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.h
 
