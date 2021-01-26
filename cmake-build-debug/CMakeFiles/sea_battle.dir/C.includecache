@@ -12,29 +12,9 @@ stdio.h
 menu.h
 /home/noisyboy/university/sea_battle/menu.h
 
-/home/noisyboy/university/sea_battle/menu.h
-menu/main/main_menu.h
-/home/noisyboy/university/sea_battle/menu/main/main_menu.h
-
-/home/noisyboy/university/sea_battle/menu/helpers/MenuHelpers.c
+/home/noisyboy/university/sea_battle/menu/helpers/menu_helpers.c
 stdio.h
 -
 menu.h
 /home/noisyboy/university/sea_battle/menu/helpers/menu.h
-
-/home/noisyboy/university/sea_battle/menu/main/main_menu.c
-stdio.h
--
-menu.h
-/home/noisyboy/university/sea_battle/menu/main/menu.h
-
-/home/noisyboy/university/sea_battle/menu/main/main_menu.h
-
-/home/noisyboy/university/sea_battle/menu/menu.c
-stdio.h
--
-../menu.h
-/home/noisyboy/university/sea_battle/menu.h
-main/main_menu.h
-/home/noisyboy/university/sea_battle/menu/main/main_menu.h
 
