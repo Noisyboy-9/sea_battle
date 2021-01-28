@@ -11,7 +11,17 @@ add_executable(
         menu/helpers/menu_helpers.h
         menu/main/main_menu.c
         menu/main/main_menu.h
+        menu/user/user.c
+        menu/user/user.h
+        menu/settingsMenu/settingsMenu.c
+        menu/settingsMenu/settingsMenu.h
 
         modes/modes.h
         modes/multiplayer/multiplayer.c
-        modes/multiplayer/multiplayer.h menu/user/user.c menu/user/user.h modes/singleplayer/singleplayer.c modes/singleplayer/singleplayer.h)
+        modes/multiplayer/multiplayer.h
+        modes/singleplayer/singleplayer.c
+        modes/singleplayer/singleplayer.h
+
+        settings/settings.c
+        settings/settings.h
+)

@@ -4,5 +4,6 @@
 #include "main/main_menu.h"
 #include "helpers/menu_helpers.h"
 #include "user/user.h"
+#include "settingsMenu/settingsMenu.h"
 
 #endif //SEA_BATTLE_MENU_H

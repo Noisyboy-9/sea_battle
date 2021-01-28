@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "../../modes/modes.h"
-#include "singleplayer.h"
+#include "../../settings/settings.h"
 
 #define MAIN_MENU_PLAY_WITH_FRIEND 1
 #define MAIN_MENU_PLAY_WITH_BOT 2
@@ -29,6 +29,9 @@ int mainMenuOrderController(int order) {
             break;
         case MAIN_MENU_PLAY_WITH_BOT:
             playWithBotMode();
+            break;
+        case MAIN_MENU_SETTINGS:
+            changeSettingsHandler();
             break;
         default:
             order = MAIN_MENU_EXIT;
