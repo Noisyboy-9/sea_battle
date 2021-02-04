@@ -5,7 +5,7 @@
 
 
 void playWithBotMode() {
-//    user1
+//    player1
     getUserMenuOrder(&selectUserMenuShower, 0);
     getUserMenuOrder(&selectPutShipMenuShower, 0);
 

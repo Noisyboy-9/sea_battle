@@ -24,4 +24,4 @@ add_executable(
 
         settings/settings.c
         settings/settings.h
-)
+        users/user.c users/user.h)
