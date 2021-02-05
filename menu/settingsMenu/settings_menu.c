@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "settingsMenu.h"
+#include "settings_menu.h"
 
 void showSettingsMenu() {
     printf("SETTINGS:\n");

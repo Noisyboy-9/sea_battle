@@ -1,13 +1,14 @@
 #include "../../modes/modes.h"
 #include "../../menu/menu.h"
-#include <stdio.h>
-#include "singleplayer.h"
+#include "../../players/player.h"
 
 
 void playWithBotMode() {
 //    player1
-    getUserMenuOrder(&selectUserMenuShower, 0);
-    getUserMenuOrder(&selectPutShipMenuShower, 0);
+    loadPlayerFromUserChoice(
+            getUserMenuOrder(&selectUserMenuShower, 0),
+            getUserMenuOrder(&selectPutShipMenuShower, 0)
+    );
 
 //    bot
 

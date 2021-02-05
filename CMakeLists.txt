@@ -11,10 +11,10 @@ add_executable(
         menu/helpers/menu_helpers.h
         menu/main/main_menu.c
         menu/main/main_menu.h
-        menu/user/user.c
-        menu/user/user.h
-        menu/settingsMenu/settingsMenu.c
-        menu/settingsMenu/settingsMenu.h
+        menu/user/user_menu.c
+        menu/user/user_menu.h
+        menu/settingsMenu/settings_menu.c
+        menu/settingsMenu/settings_menu.h
 
         modes/modes.h
         modes/multiplayer/multiplayer.c
@@ -24,4 +24,10 @@ add_executable(
 
         settings/settings.c
         settings/settings.h
-        users/user.c users/user.h)
+
+        players/player.h
+        players/load/load_player.c
+        players/load/load_player.h
+
+        users/users.h
+        users/load_user/load_user.c users/load_user/load_user.h users/define/user_define.c users/define/user_define.h)

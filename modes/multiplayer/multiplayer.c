@@ -1,18 +1,21 @@
 #include "multiplayer.h"
 #include "../../menu/menu.h"
+#include "../../players/player.h"
 
 
 void playWithFriendMode() {
-//    user1
-    getUserMenuOrder(&selectUserMenuShower, 1);
-    getUserMenuOrder(&selectPutShipMenuShower, 1);
+//    player1
+    int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 1);
+    int putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 1);
+    loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
 
 
-//    user2
-    getUserMenuOrder(&selectUserMenuShower, 2);
-    getUserMenuOrder(&selectPutShipMenuShower, 2);
+//    player2
+    selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 2);
+    putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 2);
+    loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
 
 //    starting the game
-//    startGame(user1, user2);
+//    startGame(player1, player2);
 }
 

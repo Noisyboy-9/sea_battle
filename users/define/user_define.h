@@ -1,5 +1,5 @@
-#ifndef SEA_BATTLE_USER_H
-#define SEA_BATTLE_USER_H
+#ifndef SEA_BATTLE_USER_DEFINE_H
+#define SEA_BATTLE_USER_DEFINE_H
 #define MAX_NAME_LENGTH 100
 
 typedef struct {
@@ -7,8 +7,8 @@ typedef struct {
     char name[MAX_NAME_LENGTH];
     int winCount;
     int loseCount;
-    double winLostRatio;
+    double winLoseRation;
     int score;
-} Student;
+} User;
 
-#endif //SEA_BATTLE_USER_H
+#endif //SEA_BATTLE_USER_DEFINE_H

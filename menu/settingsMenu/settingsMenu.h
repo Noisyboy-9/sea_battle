@@ -1,6 +1,0 @@
-#ifndef SEA_BATTLE_SETTINGSMENU_H
-#define SEA_BATTLE_SETTINGSMENU_H
-
-void showSettingsMenu();
-
-#endif //SEA_BATTLE_SETTINGSMENU_H
