@@ -30,4 +30,4 @@ add_executable(
         players/load/load_player.h
 
         users/users.h
-        users/load_user/load_user.c users/load_user/load_user.h users/define/user_define.c users/define/user_define.h ship/ship.h)
+        users/load_user/load_user.c users/load_user/load_user.h users/define/user_define.c users/define/user_define.h ship/ship.h ship/define/ship_define.c ship/define/ship_define.h)
