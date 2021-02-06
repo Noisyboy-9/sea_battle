@@ -4,11 +4,10 @@
 
 
 void playWithBotMode() {
-//    player1
-    loadPlayerFromUserChoice(
-            getUserMenuOrder(&selectUserMenuShower, 0),
-            getUserMenuOrder(&selectPutShipMenuShower, 0)
-    );
+    //    player1
+    int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 0);
+    int putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 0);
+    Player player = loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
 
 //    bot
 
