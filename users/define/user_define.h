@@ -7,7 +7,7 @@ typedef struct {
     char name[MAX_NAME_LENGTH];
     int winCount;
     int loseCount;
-    double winLoseRation;
+    double winLoseRatio;
     int score;
 } User;
 

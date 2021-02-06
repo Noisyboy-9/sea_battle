@@ -2,6 +2,8 @@
 #include "menu/menu.h"
 
 int main() {
+    setbuf(stdout, 0);
+
     int mainMenuOrder = getUserMenuOrder(&showMainMenu, 0);
     while (mainMenuOrder != MAIN_MENU_EXIT) {
         mainMenuOrderController(mainMenuOrder);
