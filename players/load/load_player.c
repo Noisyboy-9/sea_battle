@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "../../users/users.h"
 
-void loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder) {
+Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder) {
     User user = (selectUserOrder == 1) ? loadUserFromDatabase() : createNewUser();
 //    return (putShipOrder == 1) ? autoPutShips(user) : putShipsManually(user);
 }
