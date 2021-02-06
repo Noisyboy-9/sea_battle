@@ -1,0 +1,4 @@
+#ifndef SEA_BATTLE_SHIP_H
+#define SEA_BATTLE_SHIP_H
+
+#endif //SEA_BATTLE_SHIP_H
