@@ -24,5 +24,7 @@
 #include "players/define/player_define.h"
 #include "players/load/load_player.h"
 
+//settings
+#include "settings/settings.h"
 
 #endif //SEA_BATTLE_AUTO_IMPORT_H

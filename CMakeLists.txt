@@ -24,7 +24,6 @@ add_executable(
         settings/settings.c
         settings/settings.h
 
-        players/player.h
         players/load/load_player.c
         players/load/load_player.h
         players/define/player_define.c
