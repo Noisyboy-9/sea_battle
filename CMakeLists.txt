@@ -35,7 +35,6 @@ add_executable(
         users/define/user_define.c
         users/define/user_define.h
 
-        ship/ship.h
         ship/define/ship_define.c
         ship/define/ship_define.h
 

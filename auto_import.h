@@ -27,4 +27,7 @@
 //settings
 #include "settings/settings.h"
 
+//ship
+#include "ship/define/ship_define.h"
+
 #endif //SEA_BATTLE_AUTO_IMPORT_H
