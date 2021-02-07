@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "../auto_import.h"
 #include "settings.h"
-#include "../menu/menu.h"
+
 
 void changeSettingsHandler() {
     int order = getUserMenuOrder(&showSettingsMenu, 0);

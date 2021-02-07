@@ -1,5 +1,5 @@
 #include "multiplayer.h"
-#include "../../menu/menu.h"
+#include "../../auto_import.h"
 #include "../../players/player.h"
 
 

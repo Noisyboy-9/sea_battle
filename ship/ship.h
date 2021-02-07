@@ -3,4 +3,5 @@
 
 #include "define/ship_define.h"
 
+
 #endif //SEA_BATTLE_SHIP_H

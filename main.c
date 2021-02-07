@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "menu/menu.h"
+#include "auto_import.h"
 
 int main() {
     setbuf(stdout, 0);

@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "settings_menu.h"
+#include "../../auto_import.h"
 
 void showSettingsMenu() {
     printf("SETTINGS:\n");
