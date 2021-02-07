@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include "../../modes/modes.h"
-#include "../../settings/settings.h"
+#include "../../auto_import.h"
 
 #define MAIN_MENU_PLAY_WITH_FRIEND 1
 #define MAIN_MENU_PLAY_WITH_BOT 2

@@ -1,4 +1,4 @@
-#include "load_user.h"
+#include "../../auto_import.h"
 
 bool fileIsEmpty(FILE *usersDatabaseHandler);
 

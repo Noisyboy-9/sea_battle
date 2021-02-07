@@ -1,5 +1,4 @@
-#ifndef SEA_BATTLE_AUTO_IMPORT_H
-#define SEA_BATTLE_AUTO_IMPORT_H
+#pragma once
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,18 +19,22 @@
 #include "modes/singleplayer/singleplayer.h"
 #include "modes/multiplayer/multiplayer.h"
 
-//players
-#include "players/define/player_define.h"
-#include "players/load/load_player.h"
-
-//settings
-#include "settings/settings.h"
-
-//ship
-#include "ship/define/ship_define.h"
-
 //users
 #include "users/define/user_define.h"
 #include "users/load_user/load_user.h"
 
-#endif //SEA_BATTLE_AUTO_IMPORT_H
+
+//ship
+#include "ship/define/ship_define.h"
+
+//settings
+#include "settings/settings.h"
+
+
+//players
+#include "players/define/player_define.h"
+#include "players/load/load_player.h"
+
+
+
+

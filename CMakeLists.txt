@@ -4,6 +4,7 @@ project(sea_battle C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(
+        auto_import.h
         sea_battle
         main.c
 
@@ -26,19 +27,15 @@ add_executable(
 
         players/load/load_player.c
         players/load/load_player.h
-        players/define/player_define.c
         players/define/player_define.h
 
         users/load_user/load_user.c
         users/load_user/load_user.h
-        users/define/user_define.c
         users/define/user_define.h
 
-        ship/define/ship_define.c
         ship/define/ship_define.h
 
         map/point_declare/point_declare.c
         map/point_declare/point_declare.h
 
-        auto_import.h
 )

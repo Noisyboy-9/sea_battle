@@ -1,7 +1,7 @@
 #ifndef SEA_BATTLE_LOAD_PLAYER_H
 #define SEA_BATTLE_LOAD_PLAYER_H
 
-#include "../define/player_define.h"
+#include "../../auto_import.h"
 
 Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder);
 

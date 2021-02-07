@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "../../auto_import.h"
 
 int getUserMenuOrder(void (*menuShowCallback)(), int playerNumber) {
     int order;

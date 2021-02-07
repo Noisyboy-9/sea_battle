@@ -1,6 +1,4 @@
-#include "../../modes/modes.h"
 #include "../../auto_import.h"
-#include "../../players/player.h"
 
 
 void playWithBotMode() {

@@ -1,5 +1,4 @@
-#include "load_player.h"
-
+#include "../../auto_import.h"
 
 Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder) {
     User user;
@@ -22,7 +21,7 @@ Player putShipsManually(User user) {
 }
 
 Player autoPutShips(User user) {
-    
+
 }
 
 

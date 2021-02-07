@@ -1,5 +1,4 @@
 #include "../auto_import.h"
-#include "settings.h"
 
 
 void changeSettingsHandler() {

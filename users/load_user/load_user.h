@@ -1,12 +1,7 @@
 #ifndef SEA_BATTLE_LOAD_USER_H
 #define SEA_BATTLE_LOAD_USER_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-#include "../users.h"
-#include "../define/user_define.h"
+#include "../../auto_import.h"
 
 User createNewUser();
 
