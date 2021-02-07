@@ -20,5 +20,9 @@
 #include "modes/singleplayer/singleplayer.h"
 #include "modes/multiplayer/multiplayer.h"
 
+//players
+#include "players/define/player_define.h"
+#include "players/load/load_player.h"
+
 
 #endif //SEA_BATTLE_AUTO_IMPORT_H
