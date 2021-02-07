@@ -27,6 +27,7 @@
 //ship
 #include "ship/define/ship_define.h"
 
+
 //settings
 #include "settings/settings.h"
 
@@ -35,6 +36,9 @@
 #include "players/define/player_define.h"
 #include "players/load/load_player.h"
 
+//ship placement
+#include "ship/placement/auto/ship_placement_auto.h"
+#include "ship/placement/manual/ship_placement_manual.h"
 
 
 

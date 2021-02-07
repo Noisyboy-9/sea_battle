@@ -16,13 +16,6 @@ Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder) {
     }
 }
 
-Player putShipsManually(User user) {
-
-}
-
-Player autoPutShips(User user) {
-
-}
 
 
 

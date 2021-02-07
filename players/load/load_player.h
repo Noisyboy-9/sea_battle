@@ -8,6 +8,4 @@ Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder);
 
 Player autoPutShips(User user);
 
-Player putShipsManually(User user);
-
 #endif //SEA_BATTLE_LOAD_USER_H
