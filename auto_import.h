@@ -30,4 +30,8 @@
 //ship
 #include "ship/define/ship_define.h"
 
+//users
+#include "users/define/user_define.h"
+#include "users/load_user/load_user.h"
+
 #endif //SEA_BATTLE_AUTO_IMPORT_H

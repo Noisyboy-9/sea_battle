@@ -29,7 +29,6 @@ add_executable(
         players/define/player_define.c
         players/define/player_define.h
 
-        users/users.h
         users/load_user/load_user.c
         users/load_user/load_user.h
         users/define/user_define.c
