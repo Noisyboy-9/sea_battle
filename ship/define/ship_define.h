@@ -3,10 +3,11 @@
 
 #include "../../auto_import.h"
 
-typedef struct {
+typedef struct ship_t {
     int width;
-    int height;
     Coordinate start;
-    Coordinate finish;
+    Coordinate end;
+
+    struct ship_t *next;
 } Ship;
 #endif //SEA_BATTLE_SHIP_DEFINE_H

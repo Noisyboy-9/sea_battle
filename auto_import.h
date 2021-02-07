@@ -14,7 +14,8 @@
 
 //map
 #include "map/point_declare/point_declare.h"
-
+#include "map/visual/map_visual.h"
+#include "map/point_helper/point_helper.h"
 // modes
 #include "modes/singleplayer/singleplayer.h"
 #include "modes/multiplayer/multiplayer.h"

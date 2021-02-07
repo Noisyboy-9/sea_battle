@@ -12,7 +12,7 @@ Player loadPlayerFromUserChoice(int selectUserOrder, int putShipOrder) {
     if (putShipOrder == 1) {
         return autoPutShips(user);
     } else {
-        return putShipsManually(user);
+        return handlePutShipsManually(user);
     }
 }
 

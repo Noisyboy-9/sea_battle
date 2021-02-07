@@ -3,6 +3,6 @@
 
 #include "../../../auto_import.h"
 
-Player putShipsManually(User user);
+Player handlePutShipsManually(User user);
 
 #endif //SEA_BATTLE_SHIP_PLACEMENT_MANUAL_H
