@@ -16,7 +16,6 @@ add_executable(
         menu/settingsMenu/settings_menu.c
         menu/settingsMenu/settings_menu.h
 
-        modes/modes.h
         modes/multiplayer/multiplayer.c
         modes/multiplayer/multiplayer.h
         modes/singleplayer/singleplayer.c
@@ -41,7 +40,6 @@ add_executable(
         ship/define/ship_define.c
         ship/define/ship_define.h
 
-        map/map.h
         map/point_declare/point_declare.c
         map/point_declare/point_declare.h
 

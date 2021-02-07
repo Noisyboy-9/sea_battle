@@ -16,4 +16,9 @@
 //map
 #include "map/point_declare/point_declare.h"
 
+// modes
+#include "modes/singleplayer/singleplayer.h"
+#include "modes/multiplayer/multiplayer.h"
+
+
 #endif //SEA_BATTLE_AUTO_IMPORT_H
