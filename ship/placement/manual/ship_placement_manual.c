@@ -1,26 +1,6 @@
 #include "../../../auto_import.h"
 
-Player putShipsManually(Player player);
-
-
-Ship *putShip(Ship *head, int count, int width, char map[10][10]);
-
-
-bool shipCanBePlacedInCoordinates(int shipWidth, char map[10][10], Coordinate start, Coordinate end);
-
-Ship *addShipToList(Ship *head, int width, Coordinate start, Coordinate end);
-
-Ship *findTale(Ship *head);
-
-void updateMap(char map[10][10], Coordinate start, Coordinate end);
-
-bool shipIsHorizontal(Coordinate start, Coordinate end);
-
-bool shipIsVertical(Coordinate start, Coordinate end);
-
-bool isOutOfRange(Coordinate start, Coordinate end);
-
-Player handlePutShipsManually(User user) {
+Player handleManualShipPlacement(User user) {
     Player player;
     player.userData = user;
 
@@ -169,8 +149,8 @@ bool shipIsVertical(Coordinate start, Coordinate end) {
 }
 
 bool isOutOfRange(Coordinate start, Coordinate end) {
-    return findHighestY(start, end) > 10 ||
-           findHighestX(start, end) > 10 ||
+    return findHighestY(start, end) > 9 ||
+           findHighestX(start, end) > 9 ||
            findLowestY(start, end) < 0 ||
            findLowestX(start, end) < 0;
 }
