@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <time.h>
 
 //menu
 #include "menu/helpers/menu_helpers.h"
@@ -16,6 +17,7 @@
 #include "map/point_declare/point_declare.h"
 #include "map/visual/map_visual.h"
 #include "map/point_helper/point_helper.h"
+
 // modes
 #include "modes/singleplayer/singleplayer.h"
 #include "modes/multiplayer/multiplayer.h"
@@ -38,8 +40,5 @@
 #include "players/load/load_player.h"
 
 //ship placement
-#include "ship/placement/auto/ship_placement_auto.h"
 #include "ship/placement/manual/ship_placement_manual.h"
-
-
-
+#include "ship/placement/auto/ship_placement_auto.h"
