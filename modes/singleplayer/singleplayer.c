@@ -3,6 +3,12 @@
 
 Player setUpBot();
 
+void startGameWithBot(Player player, Player bot);
+
+Coordinate handleBotMove(Player *attacker, Player *defender);
+
+void botAttack(Coordinate coordination, Player *attacker, Player *defender);
+
 void playWithBotMode() {
     //    player1
     int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 0);
@@ -13,7 +19,76 @@ void playWithBotMode() {
     Player bot = setUpBot();
 
 //    start game with Bot
-//    startGameWithBot(player, bot);
+    startGameWithBot(player, bot);
+}
+
+void startGameWithBot(Player player, Player bot) {
+    fillMapWithLetter(player.attackMap, 'N');
+    fillMapWithLetter(bot.attackMap, 'N');
+    player.isPlayerTurn = true;
+
+    while (!thereIsWinner(player, bot)) {
+        Player *attacker = findAttacker(&player, &bot);
+        Player *defender = findDefender(&player, &bot);
+
+        if (strcmp(player.userData.name, attacker->userData.name) == 0) {
+//            player is the attacker
+            printf("%s score : %d\n", attacker->userData.name, attacker->userData.score);
+            handleMakeMove(attacker, defender);
+        } else {
+//            it is bot turn
+            Coordinate botAttackCoordinate = handleBotMove(attacker, defender);
+            printf("bot attacked coordinate with x: %d, y: %d\n", botAttackCoordinate.x, botAttackCoordinate.y);
+        }
+    }
+
+    Player *winner = findWinner(&player, &bot);
+    Player *loser = findLoser(&player, &bot);
+
+    printf("game is finished :)");
+    printf("%s has won the game :)", winner->userData.name);
+
+    updatePlayerData(winner, loser);
+    updateUserScoreBoard(player.userData);
+
+}
+
+Coordinate handleBotMove(Player *attacker, Player *defender) {
+    Coordinate attackCoordinate = generateRandomCoordination();
+
+    while (!isValidAttackLocation(attacker->attackMap, attackCoordinate)) {
+        attackCoordinate = generateRandomCoordination();
+    }
+
+    botAttack(attackCoordinate, attacker, defender);
+    return attackCoordinate;
+}
+
+void botAttack(Coordinate coordination, Player *attacker, Player *defender) {
+    if (!itIsAHit(coordination, *defender)) {
+//        change turns
+        printf("bot didn't hit\n");
+        attacker->isPlayerTurn = false;
+        defender->isPlayerTurn = true;
+        return;
+    }
+    printf("bot hit\n");
+//    it hits the target
+    Ship *damagedShip = findDamagedShip(coordination, *defender);
+    (damagedShip->hitCount)++;
+
+    if (shipHasSunk(damagedShip)) {
+        handleShipDelete(defender->shipHead, damagedShip);
+
+        //    change turns
+        attacker->isPlayerTurn = false;
+        defender->isPlayerTurn = true;
+        return;
+    }
+
+    //    change turns
+    attacker->isPlayerTurn = false;
+    defender->isPlayerTurn = true;
 }
 
 Player setUpBot() {

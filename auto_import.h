@@ -42,5 +42,5 @@
 #include "ship/placement/auto/ship_placement_auto.h"
 
 // modes
-#include "modes/singleplayer/singleplayer.h"
 #include "modes/multiplayer/multiplayer.h"
+#include "modes/singleplayer/singleplayer.h"

@@ -20,9 +20,11 @@ Player *findWinner(Player *player1, Player *player2) {
     return player1->shipHead ? player1 : player2;
 }
 
+
 Player *findLoser(Player *player1, Player *player2) {
     return player1->shipHead ? player2 : player1;
 }
+
 
 void updatePlayerData(Player *winner, Player *loser) {
     // updating winner data
@@ -51,6 +53,7 @@ bool fileDoesNotContainUser(FILE *fileHandler, User user) {
     fseek(fileHandler, 0, SEEK_SET);
     return false;
 }
+
 
 void updateUserScoreBoard(User user) {
     FILE *scoreboardDatabaseHandler = fopen("../database/scoreboard.database.binary", "ab+");

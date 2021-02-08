@@ -1,5 +1,13 @@
 #ifndef SEA_BATTLE_MULTIPLAYER_H
 #define SEA_BATTLE_MULTIPLAYER_H
+Player *findWinner(Player *player1, Player *player2);
+
+void updateUserScoreBoard(User user);
+
+void updatePlayerData(Player *winner, Player *loser);
+
+Player *findLoser(Player *player1, Player *player2);
+
 
 void handleMakeMove(Player *attacker, Player *defender);
 
