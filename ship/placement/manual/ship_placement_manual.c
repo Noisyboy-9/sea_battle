@@ -116,6 +116,7 @@ Ship *addShipToList(Ship *head, int width, Coordinate start, Coordinate end) {
         head->start = start;
         head->end = end;
         head->width = width;
+        head->hitCount = 0;
         head->next = NULL;
 
         return head;
@@ -123,6 +124,7 @@ Ship *addShipToList(Ship *head, int width, Coordinate start, Coordinate end) {
 
     Ship *newShip = (Ship *) calloc(1, sizeof(Ship));
     newShip->width = width;
+    newShip->hitCount = 0;
     newShip->end = end;
     newShip->start = start;
     newShip->next = NULL;
