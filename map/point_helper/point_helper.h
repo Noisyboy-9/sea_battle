@@ -10,4 +10,8 @@ int findHighestY(Coordinate start, Coordinate end);
 
 int findLowestY(Coordinate start, Coordinate end);
 
+bool isCoordinationOutOfRange(Coordinate coordination);
+
+bool isOutOfRange(Coordinate start, Coordinate end);
+
 #endif //SEA_BATTLE_POINT_HELPER_H

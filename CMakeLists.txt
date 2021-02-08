@@ -38,4 +38,4 @@ add_executable(
         map/point_declare/point_declare.c
         map/point_declare/point_declare.h
 
-        ship/placement/auto/ship_placement_auto.c ship/placement/auto/ship_placement_auto.h ship/placement/manual/ship_placement_manual.c ship/placement/manual/ship_placement_manual.h map/visual/map_visual.c map/visual/map_visual.h map/point_helper/point_helper.c map/point_helper/point_helper.h)
+        ship/placement/auto/ship_placement_auto.c ship/placement/auto/ship_placement_auto.h ship/placement/manual/ship_placement_manual.c ship/placement/manual/ship_placement_manual.h map/visual/map_visual.c map/visual/map_visual.h map/point_helper/point_helper.c map/point_helper/point_helper.h menu/in-game/in_game_menu.c menu/in-game/in_game_menu.h)

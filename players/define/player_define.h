@@ -6,6 +6,7 @@
 typedef struct {
     User userData;
     Ship *shipHead;
+    char attackMap[10][10];
     bool isPlayerTurn;
 } Player;
 

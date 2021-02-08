@@ -24,5 +24,4 @@ bool shipIsHorizontal(Coordinate start, Coordinate end);
 bool shipIsVertical(Coordinate start, Coordinate end);
 
 
-
 #endif //SEA_BATTLE_SHIP_PLACEMENT_MANUAL_H

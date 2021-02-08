@@ -1,7 +1,5 @@
 #include "../../auto_import.h"
 
-bool fileIsEmpty(FILE *usersDatabaseHandler);
-
 User createNewUser() {
     printf("CREATE NEW USER . . .\n");
     char inputName[MAX_NAME_LENGTH];
@@ -142,6 +140,7 @@ bool fileIsEmpty(FILE *usersDatabaseHandler) {
         return true;
     }
 
+//    return to the beginning of the file
     fseek(usersDatabaseHandler, 0, SEEK_SET);
     return false;
 }
