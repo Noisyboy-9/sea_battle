@@ -90,8 +90,8 @@ void updateMap(char map[10][10], Coordinate start, Coordinate end) {
         int lowestX = findLowestX(start, end);
         int highestX = findHighestX(start, end);
 
-        for (int row = lowestX; row <= highestX; ++row) {
-            map[start.y][row] = 'S';
+        for (int column = lowestX; column <= highestX; ++column) {
+            map[start.y][column] = 'S';
         }
 
         return;
@@ -101,8 +101,8 @@ void updateMap(char map[10][10], Coordinate start, Coordinate end) {
     int lowestY = findLowestY(start, end);
     int highestY = findHighestY(start, end);
 
-    for (int column = lowestY; column <= highestY; ++column) {
-        map[column][start.x] = 'S';
+    for (int row = lowestY; row <= highestY; ++row) {
+        map[row][start.x] = 'S';
     }
 }
 
@@ -150,12 +150,6 @@ bool shipIsVertical(Coordinate start, Coordinate end) {
     return start.x == end.x;
 }
 
-bool isOutOfRange(Coordinate start, Coordinate end) {
-    return findHighestY(start, end) > 9 ||
-           findHighestX(start, end) > 9 ||
-           findLowestY(start, end) < 0 ||
-           findLowestX(start, end) < 0;
-}
 
 bool shipCanBePlacedInCoordinates(int shipWidth, char map[10][10], Coordinate start, Coordinate end) {
     if (isOutOfRange(start, end)) {

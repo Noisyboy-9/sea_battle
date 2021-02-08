@@ -54,8 +54,8 @@ Ship *autoPutShip(Ship *head, int count, int shipWidth, char map[10][10]) {
                 end = determineEnd(start, direction, shipWidth);
             }
 
-            head = addShipToList(head, shipWidth, start, start);
-            updateMap(map, start, start);
+            head = addShipToList(head, shipWidth, start, end);
+            updateMap(map, start, end);
             continue;
         }
 
