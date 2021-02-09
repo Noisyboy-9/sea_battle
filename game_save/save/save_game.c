@@ -1,14 +1,5 @@
 #include "../../auto_import.h"
 
-int countItems(Ship *head);
-
-void makeArrayFromLinkedList(Ship *head, Ship array[], int count);
-
-void copyShipArray(Ship *destination, Ship *source, int sourceCount);
-
-void setupMapRow(char destinationRow[10], char sourceRow[10]);
-
-void saveGameDataToBeginningOfFile(GameSave log);
 
 void handleGameSave(Player *attacker, Player *defender) {
     int attackerShipCount = countItems(attacker->shipHead);
@@ -39,7 +30,10 @@ void handleGameSave(Player *attacker, Player *defender) {
 
 //    setting up ships data
     copyShipArray(gameSaveLog.attackerShips, attackerShips, attackerShipCount);
+    gameSaveLog.attackerShipCount = attackerShipCount;
+
     copyShipArray(gameSaveLog.defenderShips, defenderShips, defenderShipCount);
+    gameSaveLog.defenderShipCount = defenderShipCount;
 
 //    setting up attacker map
     setupMapRow(gameSaveLog.attackerMapRow1, (attacker->attackMap)[0]);
@@ -71,7 +65,7 @@ void handleGameSave(Player *attacker, Player *defender) {
 }
 
 void saveGameDataToBeginningOfFile(GameSave log) {
-    FILE *saveGameDatabaseHandler = fopen("../loader.database.binary", "ab+");
+    FILE *saveGameDatabaseHandler = fopen("../database/loader.database.binary", "ab");
     fseek(saveGameDatabaseHandler, 0, SEEK_SET);
     fwrite(&log, sizeof(log), 1, saveGameDatabaseHandler);
     fclose(saveGameDatabaseHandler);

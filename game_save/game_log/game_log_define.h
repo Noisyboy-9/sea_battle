@@ -7,7 +7,10 @@ typedef struct {
     User defenderUser;
 
     Ship attackerShips[10];
+    int attackerShipCount;
+
     Ship defenderShips[10];
+    int defenderShipCount;
 
     char attackerMapRow1[10];
     char attackerMapRow2[10];

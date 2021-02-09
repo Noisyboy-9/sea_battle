@@ -51,3 +51,4 @@
 //save game
 #include "game_save/game_log/game_log_define.h"
 #include "game_save/save/save_game.h"
+#include "game_save/load/load_game.h"
