@@ -6,6 +6,9 @@
 #include <string.h>
 #include <time.h>
 
+bool isApplicationInProduction;
+
+
 //menu
 #include "menu/helpers/menu_helpers.h"
 #include "menu/main/main_menu.h"

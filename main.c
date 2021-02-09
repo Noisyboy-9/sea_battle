@@ -1,8 +1,10 @@
 #include "auto_import.h"
 
 int main() {
+//    basic project setup
     setbuf(stdout, 0);
     srand(time(0));
+    isApplicationInProduction = true;
 
     int mainMenuOrder = getUserMenuOrder(&showMainMenu, 0);
 
