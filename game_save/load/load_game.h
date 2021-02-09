@@ -4,6 +4,8 @@
 
 void handleLoadGame();
 
+void handleLoadLastGame();
+
 void loadGameById(int id);
 
 void makePlayersFromLog(GameSave log, Player *player1, Player *player2);

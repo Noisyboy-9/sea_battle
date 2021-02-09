@@ -163,3 +163,12 @@ Ship *addItemToList(Ship *head, Ship ship) {
 
     return head;
 }
+
+void handleLoadLastGame() {
+    FILE *savedGamesDatabaseHandler = fopen("../database/loader.database.binary", "rb");
+    if (fileIsEmpty(savedGamesDatabaseHandler)) {
+        printf("NO GAME HAS BEEN SAVED!\n");
+        return;
+    }
+    loadGameById(1);
+}

@@ -9,7 +9,7 @@
 #define MAIN_MENU_EXIT 7
 
 
-void handleLoadGame();
+
 
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
@@ -34,7 +34,7 @@ int mainMenuOrderController(int order) {
             handleLoadGame();
             break;
         case MAIN_MENU_LOAD_LAST_GAME:
-//            handleLoadLastGame();
+            handleLoadLastGame();
             break;
         case MAIN_MENU_SCORE_BOARD:
             showScoreboardHandler();
@@ -45,4 +45,5 @@ int mainMenuOrderController(int order) {
 
     return order;
 }
+
 
