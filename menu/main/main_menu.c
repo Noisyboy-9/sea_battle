@@ -9,8 +9,6 @@
 #define MAIN_MENU_EXIT 7
 
 
-
-
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
     printf("%d.\tPlay with bot\n", MAIN_MENU_PLAY_WITH_BOT);

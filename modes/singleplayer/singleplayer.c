@@ -107,7 +107,6 @@ Player setUpBot() {
     user.winCount = 0;
     user.score = 0;
 
-
     //  setting up bot player ships
     return handleAutoShipPlacement(user);
 }
