@@ -45,6 +45,9 @@
 #include "modes/multiplayer/multiplayer.h"
 #include "modes/singleplayer/singleplayer.h"
 
-
 //score board
 #include "scoreboard/show/show_scoreboard.h"
+
+//save game
+#include "game_save/game_log/game_log_define.h"
+#include "game_save/save/save_game.h"

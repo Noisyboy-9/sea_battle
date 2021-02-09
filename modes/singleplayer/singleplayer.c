@@ -34,7 +34,14 @@ void startGameWithBot(Player player, Player bot) {
         if (strcmp(player.userData.name, attacker->userData.name) == 0) {
 //            player is the attacker
             printf("%s score : %d\n", attacker->userData.name, attacker->userData.score);
-            handleMakeMove(attacker, defender);
+            int order = getUserMenuOrder(&inGameMenuShower, 0);
+
+            if (order == 1) {
+                handleMakeMove(attacker, defender);
+            } else {
+                handleGameSave(attacker, defender);
+                return;
+            }
         } else {
 //            it is bot turn
             Coordinate botAttackCoordinate = handleBotMove(attacker, defender);

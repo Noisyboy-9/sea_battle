@@ -1,5 +1,6 @@
 #include "../../auto_import.h"
 
+
 void playWithFriendMode() {
 //    player1
     int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 1);
@@ -101,7 +102,9 @@ void startGameWithFriend(Player player1, Player player2) {
         if (order == 1) {
             handleMakeMove(attacker, defender);
         } else {
-//            handleGameSave(attacker, defender);
+            handleGameSave(attacker, defender);
+            printf("game saved successfully!\n");
+            return;
         }
     }
 
@@ -117,6 +120,7 @@ void startGameWithFriend(Player player1, Player player2) {
     updateUserScoreBoard(winner->userData);
     updateUserScoreBoard(loser->userData);
 }
+
 
 void handleMakeMove(Player *attacker, Player *defender) {
     showMap(attacker->attackMap);
