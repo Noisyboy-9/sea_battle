@@ -9,6 +9,7 @@
 #define MAIN_MENU_EXIT 7
 
 
+
 void showMainMenu() {
     printf("%d.\tPlay with a friend\n", MAIN_MENU_PLAY_WITH_FRIEND);
     printf("%d.\tPlay with bot\n", MAIN_MENU_PLAY_WITH_BOT);
@@ -28,8 +29,8 @@ int mainMenuOrderController(int order) {
         case MAIN_MENU_PLAY_WITH_BOT:
             playWithBotMode();
             break;
-        case MAIN_MENU_SETTINGS:
-            changeSettingsHandler();
+        case MAIN_MENU_SCORE_BOARD:
+            showScoreboardHandler();
             break;
         default:
             order = MAIN_MENU_EXIT;
@@ -37,4 +38,3 @@ int mainMenuOrderController(int order) {
 
     return order;
 }
-

@@ -44,3 +44,7 @@
 // modes
 #include "modes/multiplayer/multiplayer.h"
 #include "modes/singleplayer/singleplayer.h"
+
+
+//score board
+#include "scoreboard/show/show_scoreboard.h"
