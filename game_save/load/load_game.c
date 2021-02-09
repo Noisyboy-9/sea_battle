@@ -7,6 +7,11 @@ void handleLoadGame() {
     FILE *savedGamesDatabaseHandler = fopen("../database/loader.database.binary", "rb");
     if (fileIsEmpty(savedGamesDatabaseHandler)) {
         printf("NO GAME HAS BEEN SAVED!\n");
+        if (isApplicationInProduction) {
+            printf("sleep for 2 seconds and then clear screen . . . \n");
+            sleep(2);
+            clearScreen();
+        }
         return;
     }
 
@@ -67,9 +72,19 @@ void continueGameWithFriend(Player player1, Player player2) {
 
         if (order == 1) {
             handleMakeMove(attacker, defender);
+            if (isApplicationInProduction) {
+                printf("sleep for 2 seconds and then clear screen . . . \n");
+                sleep(2);
+                clearScreen();
+            }
         } else {
             handleGameSave(attacker, defender);
             printf("game saved successfully!\n");
+
+            if (isApplicationInProduction) {
+                clearScreen();
+            }
+
             return;
         }
     }
