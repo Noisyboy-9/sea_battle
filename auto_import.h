@@ -5,6 +5,12 @@
 #include <stdbool.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
+
+//better debug
+bool isApplicationInProduction;
+
+#include "better_debug/better_debug.h"
 
 //menu
 #include "menu/helpers/menu_helpers.h"

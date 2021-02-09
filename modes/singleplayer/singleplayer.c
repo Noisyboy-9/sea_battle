@@ -14,9 +14,18 @@ void playWithBotMode() {
     int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 0);
     int putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 0);
     Player player = loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
-
+    if (isApplicationInProduction) {
+        printf("sleep for 5 seconds and then clear screen . . . \n");
+        sleep(5);
+        clearScreen();
+    }
 //    bot
     Player bot = setUpBot();
+    if (isApplicationInProduction) {
+        printf("sleep for 3 seconds and then clear screen . . . \n");
+        sleep(3);
+        clearScreen();
+    }
 
 //    start game with Bot
     startGameWithBot(player, bot);
@@ -38,14 +47,27 @@ void startGameWithBot(Player player, Player bot) {
 
             if (order == 1) {
                 handleMakeMove(attacker, defender);
+                if (isApplicationInProduction) {
+                    printf("sleep for 2 seconds and then clear screen . . . \n");
+                    sleep(2);
+                    clearScreen();
+                }
             } else {
                 handleGameSave(attacker, defender);
+                if (isApplicationInProduction) {
+                    clearScreen();
+                }
                 return;
             }
         } else {
 //            it is bot turn
             Coordinate botAttackCoordinate = handleBotMove(attacker, defender);
             printf("bot attacked coordinate with x: %d, y: %d\n", botAttackCoordinate.x, botAttackCoordinate.y);
+            if (isApplicationInProduction) {
+                printf("sleep for 2 seconds and then clear screen . . . \n");
+                sleep(2);
+                clearScreen();
+            }
         }
     }
 
@@ -57,6 +79,12 @@ void startGameWithBot(Player player, Player bot) {
 
     updatePlayerData(winner, loser);
     updateUserScoreBoard(player.userData);
+
+    if (isApplicationInProduction) {
+        printf("sleep for 3 seconds and then clear screen . . . \n");
+        sleep(3);
+        clearScreen();
+    }
 }
 
 Coordinate handleBotMove(Player *attacker, Player *defender) {
@@ -106,7 +134,6 @@ Player setUpBot() {
     user.loseCount = 0;
     user.winCount = 0;
     user.score = 0;
-
 
     //  setting up bot player ships
     return handleAutoShipPlacement(user);

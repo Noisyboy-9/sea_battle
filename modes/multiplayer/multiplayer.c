@@ -6,13 +6,21 @@ void playWithFriendMode() {
     int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 1);
     int putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 1);
     Player player1 = loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
-
+    if (isApplicationInProduction) {
+        printf("after 5 seconds console will be cleared.\n");
+        sleep(5);
+        clearScreen();
+    }
 
 //    player2
     selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 2);
     putShipOrder = getUserMenuOrder(&selectPutShipMenuShower, 2);
     Player player2 = loadPlayerFromUserChoice(selectUserOrder, putShipOrder);
-
+    if (isApplicationInProduction) {
+        printf("after 5 seconds console will be cleared.\n");
+        sleep(5);
+        clearScreen();
+    }
 //    starting the game
     startGameWithFriend(player1, player2);
 }
@@ -101,9 +109,19 @@ void startGameWithFriend(Player player1, Player player2) {
 
         if (order == 1) {
             handleMakeMove(attacker, defender);
+
+            if (isApplicationInProduction) {
+                printf("sleep for 2 seconds and then clear screen . . . \n");
+                sleep(2);
+                clearScreen();
+            }
+
         } else {
             handleGameSave(attacker, defender);
             printf("game saved successfully!\n");
+            if (isApplicationInProduction) {
+                clearScreen();
+            }
             return;
         }
     }
@@ -119,6 +137,12 @@ void startGameWithFriend(Player player1, Player player2) {
 
     updateUserScoreBoard(winner->userData);
     updateUserScoreBoard(loser->userData);
+
+    if (isApplicationInProduction) {
+        printf("sleep for 2 seconds and then clear the screen\n");
+        sleep(2);
+        clearScreen();
+    }
 }
 
 
