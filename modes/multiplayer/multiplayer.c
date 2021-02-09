@@ -56,17 +56,12 @@ bool fileDoesNotContainUser(FILE *fileHandler, User user) {
 
 
 void updateUserScoreBoard(User user) {
-    FILE *scoreboardDatabaseHandler = fopen("../database/scoreboard.database.binary", "ab+");
+    FILE *scoreboardDatabaseHandler = fopen("../database/users.database.binary", "ab+");
     fseek(scoreboardDatabaseHandler, 0, SEEK_SET);
 
-    if (fileIsEmpty(scoreboardDatabaseHandler) || fileDoesNotContainUser(scoreboardDatabaseHandler, user)) {
-        fwrite(&user, sizeof(user), 1, scoreboardDatabaseHandler);
-    }
-
-//    user data exists and must be updated
 
 //    make a temp file
-    FILE *tempScoreboardDatabase = fopen("../database/scoreboard.temp.database.binary", "wb");
+    FILE *tempUsersDatabase = fopen("../database/users.temp.database.binary", "wb");
 
 //    add all other data to temp file
     User iterationUser;
@@ -74,15 +69,17 @@ void updateUserScoreBoard(User user) {
         fread(&iterationUser, sizeof(User), 1, scoreboardDatabaseHandler);
 
         if (strcmp(iterationUser.name, user.name) != 0) {
-            fwrite(&iterationUser, sizeof(user), 1, tempScoreboardDatabase);
+            fwrite(&iterationUser, sizeof(iterationUser), 1, tempUsersDatabase);
+        } else {
+            fwrite(&user, sizeof(user), 1, tempUsersDatabase);
         }
     } while (!feof(scoreboardDatabaseHandler));
 
 //    remove old file
-    remove("../database/scoreboard.database.binary");
+    remove("../database/users.database.binary");
 
 //    rename file to the actual file name
-    rename("../database/scoreboard.temp.database.binary", "../database/scoreboard.database.binary");
+    rename("../database/users.temp.database.binary", "../database/users.database.binary");
 }
 
 void startGameWithFriend(Player player1, Player player2) {

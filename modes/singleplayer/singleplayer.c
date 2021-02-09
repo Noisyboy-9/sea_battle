@@ -50,7 +50,6 @@ void startGameWithBot(Player player, Player bot) {
 
     updatePlayerData(winner, loser);
     updateUserScoreBoard(player.userData);
-
 }
 
 Coordinate handleBotMove(Player *attacker, Player *defender) {
