@@ -1,13 +1,6 @@
 #include "../../auto_import.h"
 
 
-Player setUpBot();
-
-void startGameWithBot(Player player, Player bot);
-
-Coordinate handleBotMove(Player *attacker, Player *defender);
-
-void botAttack(Coordinate coordination, Player *attacker, Player *defender);
 
 void playWithBotMode() {
     //    player1
