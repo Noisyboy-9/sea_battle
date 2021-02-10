@@ -2,6 +2,14 @@
 
 void continueGameWithFriend(Player player1, Player player2);
 
+bool isPlayerBot(Player player);
+
+Player determineBot(Player player1, Player player2);
+
+Player determineHuman(Player player1, Player player2);
+
+void continueGameWithBot(Player player, Player bot);
+
 void handleLoadGame() {
 
     FILE *savedGamesDatabaseHandler = fopen("../database/loader.database.binary", "rb");
@@ -56,7 +64,87 @@ void loadGameById(int id) {
 
     fclose(savedGamesDatabaseHandler);
 
+
+    if (isPlayerBot(player1) || isPlayerBot(player2)) {
+        Player bot = determineBot(player1, player2);
+        Player human = determineHuman(player1, player2);
+
+        return continueGameWithBot(human, bot);
+    }
+
     continueGameWithFriend(player1, player2);
+}
+
+void continueGameWithBot(Player player, Player bot) {
+    while (!thereIsWinner(player, bot)) {
+        Player *attacker = findAttacker(&player, &bot);
+        Player *defender = findDefender(&player, &bot);
+
+        if (strcmp(player.userData.name, attacker->userData.name) == 0) {
+//            player is the attacker
+            printf("%s score : %d\n", attacker->userData.name, attacker->userData.score);
+            int order = getUserMenuOrder(&inGameMenuShower, 0);
+
+            if (order == 1) {
+                handleMakeMove(attacker, defender);
+                if (isApplicationInProduction) {
+                    printf("sleep for 2 seconds and then clear screen . . . \n");
+                    sleep(2);
+                    clearScreen();
+                }
+            } else {
+                handleGameSave(attacker, defender);
+                if (isApplicationInProduction) {
+                    clearScreen();
+                }
+                return;
+            }
+        } else {
+//            it is bot turn
+            Coordinate botAttackCoordinate = handleBotMove(attacker, defender);
+            printf("bot attacked coordinate with x: %d, y: %d\n", botAttackCoordinate.x, botAttackCoordinate.y);
+            if (isApplicationInProduction) {
+                printf("sleep for 2 seconds and then clear screen . . . \n");
+                sleep(2);
+                clearScreen();
+            }
+        }
+    }
+
+    Player *winner = findWinner(&player, &bot);
+    Player *loser = findLoser(&player, &bot);
+
+    printf("game is finished :)");
+    printf("%s has won the game :)", winner->userData.name);
+
+    updatePlayerData(winner, loser);
+    updateUserScoreBoard(player.userData);
+
+    if (isApplicationInProduction) {
+        printf("sleep for 3 seconds and then clear screen . . . \n");
+        sleep(3);
+        clearScreen();
+    }
+}
+
+Player determineHuman(Player player1, Player player2) {
+    if (strcmp(player1.userData.name, "BOT") == 0) {
+        return player2;
+    }
+
+    return player1;
+}
+
+Player determineBot(Player player1, Player player2) {
+    if (strcmp(player1.userData.name, "BOT") == 0) {
+        return player1;
+    }
+
+    return player2;
+}
+
+bool isPlayerBot(Player player) {
+    return strcmp(player.userData.name, "BOT") == 0;
 }
 
 void continueGameWithFriend(Player player1, Player player2) {
