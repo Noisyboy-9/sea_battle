@@ -1,7 +1,5 @@
 #include "../../auto_import.h"
 
-
-
 void playWithBotMode() {
     //    player1
     int selectUserOrder = getUserMenuOrder(&selectUserMenuShower, 0);
@@ -106,16 +104,8 @@ void botAttack(Coordinate coordination, Player *attacker, Player *defender) {
 
     if (shipHasSunk(damagedShip)) {
         handleShipDelete(defender->shipHead, damagedShip);
-
-        //    change turns
-        attacker->isPlayerTurn = false;
-        defender->isPlayerTurn = true;
         return;
     }
-
-    //    change turns
-    attacker->isPlayerTurn = false;
-    defender->isPlayerTurn = true;
 }
 
 Player setUpBot() {
