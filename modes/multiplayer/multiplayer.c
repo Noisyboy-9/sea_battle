@@ -190,19 +190,11 @@ void attack(Coordinate coordination, Player *attacker, Player *defender) {
         updateMapForShipSunk(attacker->attackMap, damagedShip);
         updateAttackerScore(attacker, damagedShip->width, true);
         handleShipDelete(defender->shipHead, damagedShip);
-
-        //    change turns
-        attacker->isPlayerTurn = false;
-        defender->isPlayerTurn = true;
         return;
     }
 
     updateAttackerScore(attacker, damagedShip->width, false);
     updateMapForShipHit(attacker->attackMap, coordination);
-
-//    change turns
-    attacker->isPlayerTurn = false;
-    defender->isPlayerTurn = true;
 }
 
 void updateAttackerScore(Player *attacker, int shipWidth, bool isShipSunk) {
