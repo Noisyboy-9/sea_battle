@@ -6,7 +6,7 @@ this project was for my first semester computer basics course in [Amirkabir Univ
 it is a simple implementation of battle ships game with some extra features which run in the terminal
 and does not have a GUI.
   
-##features
+## features
 ### main Features
 - modes
     - :heavy_check_mark:  multiplayer
