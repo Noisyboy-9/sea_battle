@@ -65,10 +65,29 @@ void handleGameSave(Player *attacker, Player *defender) {
 }
 
 void saveGameDataToBeginningOfFile(GameSave log) {
-    FILE *saveGameDatabaseHandler = fopen("../database/loader.database.binary", "ab");
-    fseek(saveGameDatabaseHandler, 0, SEEK_SET);
-    fwrite(&log, sizeof(log), 1, saveGameDatabaseHandler);
-    fclose(saveGameDatabaseHandler);
+    FILE *saveGameOldDatabase = fopen("../database/loader.database.binary", "rb");
+    FILE *saveGameNewDatabase = fopen("../database/loader.temp.database.binary", "wb");
+
+//    writing the new data to beginning of the new file
+    int test = fwrite(&log, sizeof(log), 1, saveGameNewDatabase);
+
+//    reading all past data from old database and moving it ot the new database
+    if (!fileIsEmpty(saveGameOldDatabase)) {
+        GameSave iterationLog;
+        while (!feof(saveGameOldDatabase)) {
+            fread(&iterationLog, sizeof(iterationLog), 1, saveGameOldDatabase);
+
+            fwrite(&iterationLog, sizeof(iterationLog), 1, saveGameNewDatabase);
+        }
+    }
+
+//    deleting old database
+    remove("../database/loader.database.binary");
+//    rename new database to old database name
+    rename("../database/loader.temp.database.binary", "../database/loader.database.binary");
+
+    fclose(saveGameOldDatabase);
+    fclose(saveGameNewDatabase);
 }
 
 void setupMapRow(char destinationRow[10], char sourceRow[10]) {

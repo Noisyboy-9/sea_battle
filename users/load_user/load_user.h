@@ -3,7 +3,7 @@
 
 #include "../../auto_import.h"
 
-bool fileIsEmpty(FILE *usersDatabaseHandler);
+bool fileIsEmpty(FILE *databaseHandler);
 
 User createNewUser();
 

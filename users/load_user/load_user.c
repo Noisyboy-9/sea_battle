@@ -131,16 +131,16 @@ void printAllSavedUsers() {
     fclose(usersDatabaseHandler);
 }
 
-bool fileIsEmpty(FILE *usersDatabaseHandler) {
-    fseek(usersDatabaseHandler, 0, SEEK_END);
-    long size = ftell(usersDatabaseHandler);
+bool fileIsEmpty(FILE *databaseHandler) {
+    fseek(databaseHandler, 0, SEEK_END);
+    long size = ftell(databaseHandler);
 
     if (size == 0) {
-        fseek(usersDatabaseHandler, 0, SEEK_SET);
+        fseek(databaseHandler, 0, SEEK_SET);
         return true;
     }
 
 //    return to the beginning of the file
-    fseek(usersDatabaseHandler, 0, SEEK_SET);
+    fseek(databaseHandler, 0, SEEK_SET);
     return false;
 }

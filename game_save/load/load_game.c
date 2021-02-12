@@ -11,7 +11,6 @@ Player determineHuman(Player player1, Player player2);
 void continueGameWithBot(Player player, Player bot);
 
 void handleLoadGame() {
-
     FILE *savedGamesDatabaseHandler = fopen("../database/loader.database.binary", "rb");
     if (fileIsEmpty(savedGamesDatabaseHandler)) {
         printf("NO GAME HAS BEEN SAVED!\n");
@@ -269,6 +268,9 @@ Ship *addItemToList(Ship *head, Ship ship) {
 
 void handleLoadLastGame() {
     FILE *savedGamesDatabaseHandler = fopen("../database/loader.database.binary", "rb");
+    if (ferror(savedGamesDatabaseHandler)) {
+        printf("something went wrong here");
+    }
     if (fileIsEmpty(savedGamesDatabaseHandler)) {
         printf("NO GAME HAS BEEN SAVED!\n");
         return;
